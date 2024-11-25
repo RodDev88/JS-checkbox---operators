@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="opt1">Opción 1</label>
+    <input type="checkbox" name="opt1" id="opt1" />
+
+    <label for="opt2">Opción 2</label>
+    <input type="checkbox" name="opt2" id="opt2" />
+
+    <button
+      onclick="
+
+      opt1 = document.querySelector('#opt1').checked
+      opt2 = document.querySelector('#opt2').checked
+
+      if (opt1 == true && opt2 == true ) {
+        alert('Los dos elementos están marcados ')
+      } else {
+        alert('Los dos elementos no están marcados ')
+      }
+    "
+    >
+      Check
+    </button>
+
+    <!--EJEMPLO DEL USO DE INPUT CON CHECKBOX
+    podemos revisar en console si el el check está 
+    marcado
+
+    con document.querySelector('#id').checked
+
+    Dependiendo si está chequeado o no arroja true or false
+    
+    -->
+    <!-- <label for="opt1">Opción 1</label>
+    <input type="checkbox" name="opt1" id="opt1" /> -->
+  </body>
+</html>
